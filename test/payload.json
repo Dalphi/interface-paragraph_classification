@@ -1,0 +1,20 @@
+{
+  "content": "The story of my <strong>strong</strong> test content: Once I was a paragraph, free of any classification. Then there was this interface...",
+  "label_set": [
+    {
+      "name": "Very interesting",
+      "label": "NICE",
+      "id": 0
+    },
+    {
+      "name": "Its okay",
+      "label": "OKAY",
+      "id": 1
+    },
+    {
+      "name": "Boring",
+      "label": "NOTSOGOOD",
+      "id": 2
+    }
+  ]
+}

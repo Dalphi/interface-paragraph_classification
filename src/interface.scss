@@ -1,0 +1,32 @@
+$white: #fff;
+$green: #93b449;
+$red: #c9302c;
+
+button {
+  color: $white;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $white !important;
+  }
+
+  @mixin button-color-scheme($index, $base-color) {
+    &:nth-of-type(#{$index}) {
+      background-color: $base-color;
+      border-color: darken($base-color, 10);
+
+      &:hover {
+        background-color: darken($base-color, 5);
+      }
+
+      &:active,
+      &:focus {
+        background-color: darken($base-color, 10);
+      }
+    }
+  }
+
+  @include button-color-scheme(1, $green);
+  @include button-color-scheme(2, $red);
+}
