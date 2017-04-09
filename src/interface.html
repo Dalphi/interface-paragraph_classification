@@ -1,9 +1,8 @@
 <h1>Paragraph Classification</h1>
 <p>{{{content}}}</p>
-{{#options}}
-    <button
-        class="btn btn-secondary"
-        onclick="window.text_nominal.annotateWith('{{.}}')">
-        {{.}}
+
+{{#label_set}}
+    <button class="btn btn-secondary label-{{id}}" onclick="window.paragraph_classification.annotateWith('{{label}}')" data-label="{{label}}">
+        {{name}} ({{id}})
     </button>
-{{/options}}
+{{/label_set}}
